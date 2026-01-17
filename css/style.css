@@ -256,9 +256,22 @@ h3,
     left: 0;
     right: 0;
     bottom: 0;
-    /* This will be replaced by an image later, using a muted gradient for now */
-    background: linear-gradient(135deg, #e6e4df 0%, #f0eee9 100%);
+    background-image: url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
     z-index: -1;
+}
+
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(244, 243, 240, 0.4);
+    /* Light overlay to blend with theme */
+    backdrop-filter: blur(2px);
 }
 
 .hero-content {
