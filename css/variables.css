@@ -1,0 +1,41 @@
+:root {
+    /* Colors */
+    --color-primary: #1a1a1a;
+    /* Dark Grey/Black for main text */
+    --color-secondary: #002b5c;
+    /* Navy Blue for headings */
+    --color-accent: #c5a47e;
+    /* Muted Gold/Beige for accents */
+    --color-accent-hover: #b08d65;
+    --color-bg: #ffffff;
+    --color-bg-light: #f9f9f9;
+    --color-white: #ffffff;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-border: #e0e0e0;
+
+    /* Fonts */
+    --font-main: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, 游ゴシック体, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-serif: "Noto Serif JP", serif;
+    /* Optional for premium feel */
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+
+    /* Effects */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+    --glass-blur: blur(12px);
+}
