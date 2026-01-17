@@ -6,9 +6,10 @@ body {
     font-family: var(--font-sans);
     color: var(--color-text);
     background-color: var(--color-bg);
-    line-height: 1.8;
-    /* Relaxed reading */
-    letter-spacing: 0.05em;
+    line-height: 2.0;
+    /* Even more relaxed */
+    letter-spacing: 0.03em;
+    /* Slightly tighter for natural feel */
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -19,6 +20,9 @@ h3,
 .logo,
 .hero-tagline {
     font-family: var(--font-serif);
+    font-weight: 500;
+    /* Lighter weight */
+    letter-spacing: 0.05em;
 }
 
 .container {
@@ -373,15 +377,17 @@ h3,
 
 /* --- Section: Solution --- */
 .section-solution {
-    background-color: var(--bg-dark);
-    /* Dark theme for contrast */
-    color: var(--text-on-dark);
+    background-color: var(--color-soft-bg);
+    /* Use soft beige instead of dark */
+    color: var(--color-text);
+    /* Dark text on light bg */
 }
 
 .section-solution .section-title .en,
 .section-solution .section-title .jp,
 .section-solution .body-text {
-    color: var(--text-on-dark);
+    color: var(--color-text);
+    /* Ensure visibility */
 }
 
 .split-layout {
@@ -421,9 +427,11 @@ h3,
     background: var(--color-white);
     padding: 3rem 2rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 20px;
+    /* Softer rounded corners */
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    border: 1px solid #f0f0f0;
 }
 
 .benefit-card:hover {
