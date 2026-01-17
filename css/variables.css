@@ -1,41 +1,41 @@
 :root {
-    /* Colors */
+    /* Colors - Premium Sand Palette */
+    --color-bg: #f4f3f0;
+    /* Off-white sand color for background */
+    --color-text: #2c2c2c;
+    /* Soft black for text */
     --color-primary: #1a1a1a;
-    /* Dark Grey/Black for main text */
-    --color-secondary: #002b5c;
-    /* Navy Blue for headings */
-    --color-accent: #c5a47e;
-    /* Muted Gold/Beige for accents */
-    --color-accent-hover: #b08d65;
-    --color-bg: #ffffff;
-    --color-bg-light: #f9f9f9;
+    /* deep charcoal */
+    --color-accent: #8c7b6d;
+    /* Sand beige accent */
+    --color-accent-hover: #6e5f53;
+    --color-gold: #c5a47e;
+    /* Gold for luxury accents */
     --color-white: #ffffff;
-    --color-text: #333333;
-    --color-text-light: #666666;
-    --color-border: #e0e0e0;
+
+    /* Section Backgrounds */
+    --bg-dark: #1F2124;
+    /* Dark section background */
+    --text-on-dark: #e0e0e0;
 
     /* Fonts */
-    --font-main: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, 游ゴシック体, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-serif: "Noto Serif JP", serif;
-    /* Optional for premium feel */
+    --font-serif: "Shippori Mincho", "Noto Serif JP", serif;
+    --font-sans: "Zen Kaku Gothic New", "Yu Gothic", sans-serif;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 8rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 10rem;
 
     /* Layout */
-    --container-width: 1200px;
-    --header-height: 80px;
+    --container-width: 1000px;
+    /* Narrrower for reading experience */
+    --header-height: 70px;
 
     /* Effects */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
-    --transition: all 0.3s ease;
-    --glass-bg: rgba(255, 255, 255, 0.8);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
-    --glass-blur: blur(12px);
+    --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.03);
+    --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
