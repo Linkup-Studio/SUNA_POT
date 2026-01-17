@@ -83,8 +83,7 @@ h3,
     position: relative;
 }
 
-position: relative;
-}
+
 
 .nav-link-desktop::after {
     content: '';
