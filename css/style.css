@@ -83,6 +83,9 @@ h3,
     position: relative;
 }
 
+position: relative;
+}
+
 .nav-link-desktop::after {
     content: '';
     position: absolute;
@@ -96,6 +99,103 @@ h3,
 
 .nav-link-desktop:hover::after {
     width: 100%;
+}
+
+/* Mobile Nav Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 0;
+    margin-left: 1.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(244, 243, 240, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.mobile-menu.active {
+    right: 0;
+    opacity: 1;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu li {
+    margin: 2rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+
+.mobile-menu.active li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu.active li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.mobile-menu.active li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.mobile-menu.active li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.mobile-menu.active li:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.mobile-nav-link {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 /* --- Buttons --- */
@@ -589,18 +689,37 @@ h3,
 
     .hero-title {
         font-size: 2rem;
+        word-break: keep-all;
+        /* Prevent awkward breaks */
     }
 
     .hero-tagline {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
-    .nav-link-desktop {
+    /* Show hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .desktop-nav {
         display: none;
     }
 
     .btn-header {
-        margin-left: auto;
+        /* Keep visible but maybe smaller/icon only if needed, currently text is fine */
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-title-sm {
+        font-size: 1.6rem;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
     }
 
     .split-layout.reverse-mobile {

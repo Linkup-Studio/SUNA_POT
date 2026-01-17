@@ -25,11 +25,34 @@
     <header class="site-header">
         <div class="container header-inner">
             <a href="/" class="logo">Suna Pott</a>
+
             <div class="header-right">
-                <a href="#products" class="nav-link-desktop">Lineup</a>
-                <a href="#story" class="nav-link-desktop">Story</a>
+                <!-- Desktop Nav -->
+                <nav class="desktop-nav">
+                    <a href="#products" class="nav-link-desktop">Lineup</a>
+                    <a href="#story" class="nav-link-desktop">Story</a>
+                </nav>
                 <a href="https://thebase.in/" target="_blank" class="btn btn-sm btn-header">Shop Now</a>
+
+                <!-- Mobile Nav Toggle -->
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <nav>
+                <ul>
+                    <li><a href="#products" class="mobile-nav-link">Lineup</a></li>
+                    <li><a href="#story" class="mobile-nav-link">Story</a></li>
+                    <li><a href="#usecase" class="mobile-nav-link">Scenes</a></li>
+                    <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
